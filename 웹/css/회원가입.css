@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap');
+
+* {
+  margin:0;  
+  padding:0;   
+  box-sizing: border-box;   
+}
+a {
+  text-decoration:none;  
+}
+ul {
+  list-style: none;
+}
+
+#container {
+  margin:0 auto;  
+  width:1200px;   
+}
+
+header{
+  width:100%;    
+  height:100px;  
+  background-color:#fff;
+}
+
+#logo{ 
+  float:left;   
+  width:200px;   
+  height:100px;   
+  line-height:100px;  
+  padding-left:10px;  
+}
+#logo h1 {
+  font-family: 'Vina Sans', sans-serif;
+  font-weight:1000;
+  font-size:60px;   
+  color:#222 ;  
+}
+
+nav{  
+  float:center;  
+  width:1000px;  
+  height:100px;    
+  padding-top:40px;  
+}
+#topMenu {  
+  height:60px; 
+}
+#topMenu > li {
+  float:left; 
+  position: relative;  
+}
+#topMenu > li > a{
+  display:block;  
+  color:#000;  
+  font-weight:600;  
+  text-shadow:0 1px rgb(16, 19, 20);  
+  padding:20px 60px;   
+}
+#topMenu > li > a > span {
+  font-size : 0.5em;   
+}
+#topMenu > li > a:hover {
+  color:#07c;  
+  text-shadow:0 -1px #07c;  
+}
+
+#topMenu > li > ul { 
+  display: none;  
+  position:absolute;  
+  width:160px;
+  background:#fff;  
+  left:20px;     
+  margin:0;
+}
+#topMenu > li > ul > li {    
+  padding:10px 10px 10px 30px;   
+}
+#topMenu > li > ul > li > a { 
+  font-size:14px;   
+  padding:10px;
+  color:#000;  
+}
+#topMenu > li:hover > ul {
+  display: block;  
+  z-index:10;  
+}
+#topMenu > li > ul > li > a:hover {
+  color:#f00;   
+} 
+#log {
+    float:right; 
+    position: relative;
+    width:200px;  
+    height:20px;  
+    bottom: 20px;
+  }
+  #log > ul > li > a {
+    padding:10px 10px 10px 20px;
+    float:left; 
+    display:block;
+    text-align: center;
+    position: relative;
+    color:#000; 
+  }
+  #hr {
+    margin-top:40px;
+  }
+  #h {
+    margin-top:100px;
+    margin-left:500px;
+    color:#000;
+    font-size: 40px;   
+  }
+  #contents {
+    box-sizing: content-box;
+    width:600px;
+    height:480px;
+    margin-top:50px;
+    margin-left:300px;
+    margin-right:300px;
+    margin-bottom: 200px;
+    background-color:rgb(237, 237, 235);
+  }
+  #name {
+    height:80px;
+    width:600px;
+    padding-top:30px;
+    padding-left:85px;
+  }
+  #user_name {
+    width:150px;
+    height:30px;
+  }
+  #id {
+    height:50px;
+    width:600px;
+    padding-left:70px;
+  }
+  #user_id {
+    width:150px;
+    height:30px;
+  }
+  #user_id_check {
+    height:25px;
+    width:110px;
+  }
+  #password {
+    height:50px;
+    width:600px;
+    padding-left:55px;
+  }
+  #user_password {
+    width:150px;
+    height:30px;
+  }
+  #password_check {
+    height:50px;
+    width:600px;
+    padding-left:18px;
+  }
+  #user_password_check {
+    width:150px;
+    height:30px;
+  }
+  #birthday {
+    height:50px;
+    width:600px;
+    padding-left:62px;
+  }
+  #user_birthday {
+    width:150px;
+    height:30px;
+  }
+  #gender {
+    height:50px;
+    width:600px;
+    padding-left:80px;
+  }
+  #gender > span {
+    padding-right: 30px;
+  }
+  .user_gender {
+    width:20px;
+    height:13px;
+  }
+  #tel {
+    height:50px;
+    width:600px;
+    padding-left:73px;
+  }
+  #user_tel {
+    width:200px;
+    height:30px;
+  }
+  #mail {
+    height:50px;
+    width:600px;
+    padding-left:73px;
+  }
+  #user_mail {
+    width:200px;
+    height:30px;
+  }
+  #addr {
+    height:50px;
+    width:600px;
+    padding-left:90px;
+  }
+  #user_addr {
+    width:400px;
+    height:30px;
+  }
+  #result {
+    width:100%;
+    height:100px;
+    padding-left: 200px;
+  }
+  #submit {
+    height:35px;
+    width:80px;
+    font-size: 17px;
+  }
+  #reset {
+    height:35px;
+    width:80px;
+    font-size: 17px;
+  }
+  footer{   
+    width:100%;   
+    height:100px;  
+    border-top:2px solid #222;
+  }
+  #bottomMenu{
+    width:100%;
+    height:20px;
+    position:relative;  
+  }
+  #bottomMenu ul {
+    margin-top:15px;  
+  }
+  #bottomMenu ul li{
+    float:left;  
+    padding:5px 20px;
+    border-right:1px solid #ddd;   
+  }
+  #bottomMenu ul li:last-child{
+    border:none;   
+  }
+  #bottomMenu ul li a, #bottomMenu ul li a:visited {  
+    font-size:15px;  
+    color:#666;   
+  }
+  #sns {
+    position:absolute;  
+    right:0;  
+  }
+  #sns ul li{
+    border:none;  
+    padding:5px;   
+  } 
+  #company{
+    clear:left;  
+    margin-top:25px;  
+    margin-left:20px;  
+  }
+  p {
+    font-size:14px;  
+    color:#aaa;    
+  }

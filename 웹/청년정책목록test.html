@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>청년정책 목록</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        .table-responsive {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h4 {
+            text-align: center;
+            padding-top: 20px;
+            color: #007bff;
+        }
+
+        .btn-primary,
+        .btn-secondary,
+        .btn-gold {
+            margin-right: 10px;
+        }
+
+        .btn-gold {
+            background-color: #ffd700;
+            border-color: #ffd700;
+        }
+
+        .btn-gold:hover {
+            background-color: #cca300;
+            border-color: #cca300;
+        }
+
+        .btn-area {
+            margin-bottom: 20px;
+        }
+
+        .status-text,
+        .agency-text {
+            font-weight: bold;
+            font-size: 18px; 
+        }
+
+        .info-box {
+            display: inline-block;
+            width: calc(33% - 10px); 
+            margin-right: 10px; 
+            vertical-align: top; 
+            margin-bottom: 20px; 
+            border: 1px solid #ddd; 
+            padding: 10px; 
+        }
+
+        th,
+        td {
+            text-align: center;
+        }
+        .link-text {
+            color: #007bff;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .link-text:hover {
+            color: #0056b3;
+        }
+        .search-btn-area {
+            margin-bottom: 20px;
+        }
+
+        .btn-on {
+            background-color: #007bff !important;
+            color: #fff !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="table-responsive">
+            <h4>청년정책목록</h4>
+
+            <!-- 상태 영역 -->
+            <div class="text-center btn-area">
+                <div class="status-text">상태</div>
+                <button class="btn btn-gold filter-btn" onclick="buttonClick('모집중', this)">모집중</button>
+            </div>
+
+            <!-- 담당기관 영역 -->
+            <div class="text-center btn-area">
+                <div class="agency-text">담당기관</div>
+                <label><input type="checkbox" class="btn-gold filter-checkbox" data-value="금정구"> 금정구</label>
+                <label><input type="checkbox" class="btn-gold filter-checkbox" data-value="사하구"> 사하구</label>
+                <label><input type="checkbox" class="btn-gold filter-checkbox" data-value="해운대구"> 해운대구</label>
+                <label><input type="checkbox" class="btn-gold filter-checkbox" data-value="남구"> 남구</label>
+                <label><input type="checkbox" class="btn-gold filter-checkbox" data-value="북구"> 북구</label>
+            </div>
+
+            <div class="text-center search-btn-area">
+                <button class="btn btn-primary" onclick="searchData()">검색</button>
+            </div>
+            <div id="data-container"></div>
+        </div>
+    </div>
+    <script src="./js/리스트 버튼마다 읽기2.js"></script>
+</body>
+
+</html>
